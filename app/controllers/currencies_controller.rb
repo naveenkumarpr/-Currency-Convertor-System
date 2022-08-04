@@ -14,9 +14,9 @@ class CurrenciesController < ApplicationController
   end
 
   def convert
-    @result = Currency.convert(params[:from_currency],params[:to_currency],params[:value])
-    if @result.present?
-      render json: {from_currency: params[:from_currency], to_currency: params[:to_currency], value: params[:value], result: @result}
+    result = Currency.convert(params[:from_currency],params[:to_currency],params[:value])
+    if result.present?
+      render json: {from_currency: params[:from_currency], to_currency: params[:to_currency], value: params[:value], result: result}
     else
       render json: {status: 'FAILED', message: 'UNVALID FROM_CURRENCY OR TWO CURRENCY', data: @currency}
     end
