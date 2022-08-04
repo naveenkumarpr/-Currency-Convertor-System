@@ -1,24 +1,9 @@
-# README
+Resources, Stack and Tools:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  Used Rails, mysql for backend.
 
-Things you may want to cover:
+  Used Postman to interact with your newly built API.
 
-* Ruby version
+  Used the HTTParty gem to make external API calls in your application
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  This application is  built in API-only mode.
